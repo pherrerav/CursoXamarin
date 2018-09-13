@@ -23,12 +23,21 @@
             <Switch x:Name="ControlSwitch" IsToggled="true" />
         </StackLayout>
 
-        <Button x:Name="ButtonAgregar" Text="Agregar" />
+        <Button x:Name="ButtonAgregar" Text="Agregar" Command="{Binding AgregarComando}" />
         
         <ListView HorizontalOptions="Center" VerticalOptions="CenterAndExpand"
                   BindingContext="{Binding Source={x:Reference Root} }"
-                  ItemsSource="{Binding Path=Items}">
-            
+                  ItemsSource="{Binding Path=Items}"
+                  IsRefreshing="{Binding IsBusy}"
+                  IsPullToRefreshEnabled="true"
+                  RefreshCommand="{Binding AgregarComando}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Label Margin="5" Text="{Binding Nombre}" />
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
         </ListView>
     </StackLayout>
 </ContentPage>

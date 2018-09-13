@@ -7,6 +7,8 @@ namespace HolaMoviles
 {
 	public partial class App : Application
 	{
+		public const string WebServiceUrl = "https://cloud-services.azurewebsites.net/";
+
 		public App()
 		{
 			InitializeComponent();
