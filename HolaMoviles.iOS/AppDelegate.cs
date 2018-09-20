@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
+using HolaMoviles.iOS.Servicios;
 using UIKit;
 
 namespace HolaMoviles.iOS
@@ -22,6 +23,8 @@ namespace HolaMoviles.iOS
 		//
 		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 		{
+			Xamarin.Forms.DependencyService.Register<IMarcadorTelefonico, MarcadoriOS>();
+
 			global::Xamarin.Forms.Forms.Init();
 			LoadApplication(new App());
 

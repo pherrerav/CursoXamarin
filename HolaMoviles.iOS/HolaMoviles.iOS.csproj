@@ -95,6 +95,7 @@
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Servicios\MarcadoriOS.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
@@ -156,5 +157,8 @@
       <Project>{215D9FF8-7D11-45D1-9EA0-3052D5727AC2}</Project>
       <Name>HolaMoviles</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Servicios\" />
   </ItemGroup>
 </Project>

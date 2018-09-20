@@ -8,6 +8,10 @@ stvansolano@outlook.com
 Únete al grupo!
 https://www.meetup.com/Costa-Rica-Mobile-Developers/
 
+** Material
+
+https://speakerdeck.com/stvansolano/taller-xamarin
+
 ** GitHub
     https://github.com/stvansolano
 
@@ -33,3 +37,9 @@ https://www.meetup.com/Costa-Rica-Mobile-Developers/
     https://jsonlint.com/
 
     https://swapi.co/
+
+ ## Platform specifics
+
+ https://developers.google.com/maps/documentation/urls/android-intents
+
+ https://cocoapods.org/

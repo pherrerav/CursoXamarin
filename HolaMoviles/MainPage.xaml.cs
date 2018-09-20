@@ -17,10 +17,12 @@ namespace HolaMoviles
 	{
 		public ObservableCollection<object> Items { get; set; } = new ObservableCollection<object> { 1, "2", true, false };
 		public Command AgregarComando { get; set; }
+		public Command AbrirComando { get; set; }
 
 		public MainPage()
 		{
 			AgregarComando = new Command(async () => await CargarItems());
+			AbrirComando = new Command(async() => await Navigation.PushAsync(new TabsPage()));
 
 			InitializeComponent();
 
@@ -44,6 +46,7 @@ namespace HolaMoviles
 			if (!Plugin.Connectivity.CrossConnectivity.Current.IsConnected)
 			{
 				await DisplayAlert("Advertencia", "No hay internet", "Cerrar");
+				return;
 			}
 			IsBusy = true;
 
@@ -67,16 +70,25 @@ namespace HolaMoviles
 
 		private async Task<Producto[]> CargarProductos()
 		{
-			var cliente = new HttpClient();
+			try
+			{
+				var cliente = new HttpClient();
 
-			cliente.BaseAddress = new Uri(App.WebServiceUrl);
-			var json = await cliente.GetStringAsync("api/products");
+				cliente.BaseAddress = new Uri(App.WebServiceUrl);
+				var json = await cliente.GetStringAsync("api/products");
 
-			Console.WriteLine(json);
+				Console.WriteLine(json);
 
-			var resultado = JsonConvert.DeserializeObject<Producto[]>(json);
+				var resultado = JsonConvert.DeserializeObject<Producto[]>(json);
 
-			return resultado;
+				return resultado;
+
+			}
+			catch (Exception ex)
+			{
+				// Log 
+				return new Producto[0];
+			}
 		}
 	}
 }

@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using HolaMoviles.Droid.Servicios;
 
 namespace HolaMoviles.Droid
 {
@@ -18,6 +19,11 @@ namespace HolaMoviles.Droid
 			ToolbarResource = Resource.Layout.Toolbar;
 
 			base.OnCreate(bundle);
+
+			//Xamarin.Forms.MessageCenter
+
+			// IoC = Inversion of Control => Dependency Injection
+			Xamarin.Forms.DependencyService.Register<IMarcadorTelefonico, MarcadorAndroid>();
 
 			global::Xamarin.Forms.Forms.Init(this, bundle);
 			LoadApplication(new App());

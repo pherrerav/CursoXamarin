@@ -24,7 +24,11 @@
         </StackLayout>
 
         <Button x:Name="ButtonAgregar" Text="Agregar" Command="{Binding AgregarComando}" />
-        
+        <Button Text="Abrir" Command="{Binding AbrirComando}" 
+                
+                BindingContext="{Binding Source={x:Reference Root} }"
+                />
+                
         <ListView HorizontalOptions="Center" VerticalOptions="CenterAndExpand"
                   BindingContext="{Binding Source={x:Reference Root} }"
                   ItemsSource="{Binding Path=Items}"

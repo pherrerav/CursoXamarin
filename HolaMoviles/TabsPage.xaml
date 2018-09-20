@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" 
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+            xmlns:local="clr-namespace:HolaMoviles"
+            x:Class="HolaMoviles.TabsPage"
+            Title="Tabs">
+    <ContentPage Title="Marcado">
+        <StackLayout Orientation="Vertical">
+            <Entry x:Name="Telefono" Keyboard="Telephone" Text="555-5555" />
+            <Button x:Name="BotonMarcado" Text="Llamar" />
+        </StackLayout>
+    </ContentPage>
+
+    <local:MainPage Title="Tab 1" />
+</TabbedPage>

@@ -13,7 +13,12 @@ namespace HolaMoviles
 		{
 			InitializeComponent();
 
-			MainPage = new MainPage();
+			var mainPage = new MainPage() { Title = "Hola Moviles" };
+
+			MainPage = new NavigationPage(mainPage){ 
+				BarTextColor = Color.White,
+				BarBackgroundColor = Color.DarkBlue
+			};
 		}
 
 		protected override void OnStart()
