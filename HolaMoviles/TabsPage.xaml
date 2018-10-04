@@ -12,4 +12,26 @@
     </ContentPage>
 
     <local:MainPage Title="Tab 1" />
+
+    <ContentPage Title="Plugins">
+        <StackLayout>
+            <Grid VerticalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <!-- *, Auto, XX -->
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <Button x:Name="ControlCamara" Text="Camara" Grid.Row="0" Grid.Column="0" />
+                <Button x:Name="ControlMapas" Text="Mapas" Grid.Row="0" Grid.Column="1" />
+                <Button Text="boton 3" Grid.Row="1" Grid.Column="0" />
+                <Button Text="boton 4" Grid.Row="1" Grid.Column="1" />
+            </Grid>
+        </StackLayout>
+    </ContentPage>
 </TabbedPage>

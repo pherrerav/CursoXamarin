@@ -161,4 +161,7 @@
   <ItemGroup>
     <Folder Include="Servicios\" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\camara.png" />
+  </ItemGroup>
 </Project>

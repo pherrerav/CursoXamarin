@@ -12,11 +12,24 @@ https://www.meetup.com/Costa-Rica-Mobile-Developers/
 
 https://speakerdeck.com/stvansolano/taller-xamarin
 
+https://speakerdeck.com/stvansolano/taller-xamarin?slide=56 (Comandos de Git)
+
+https://speakerdeck.com/stvansolano/taller-xamarin?slide=32 (Definicion de Proyecto)
+
 ** GitHub
     https://github.com/stvansolano
 
 ** VSTS (Azure DevOps)
     https://visualstudio.microsoft.com/
+
+** Git / Visual Studio - Windows
+
+    https://docs.microsoft.com/en-us/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio
+    https://visualstudio.github.com/
+
+## RESTful APIs
+    https://www.programmableweb.com/category/all/apis?keyword=restful
+    https://swapi.co/
 
 ## Aplicaciones conectadas:
 
@@ -36,10 +49,16 @@ https://speakerdeck.com/stvansolano/taller-xamarin
 
     https://jsonlint.com/
 
-    https://swapi.co/
-
  ## Platform specifics
 
  https://developers.google.com/maps/documentation/urls/android-intents
 
  https://cocoapods.org/
+
+ ## Iconos
+
+ https://material.io/
+
+ https://iconos8.es/
+
+ https://developer.android.com/guide/practices/screens_support?hl=es-419#range

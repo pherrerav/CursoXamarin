@@ -11,13 +11,17 @@ namespace HolaMoviles
 		{
 			InitializeComponent();
 
-			Children.Add(new MainPage() { Title = "Tab 2" });
-			Children.Add(new MainPage() { Title = "Tab 3" });
+			//Children.Add(new MainPage() { Title = "Tab 2" });
+			//Children.Add(new MainPage() { Title = "Tab 3" });
 
 			BotonMarcado.Command = new Command(() => {
 				var marcador = DependencyService.Get<IMarcadorTelefonico>();
 
 				marcador?.Llamar(Telefono.Text);
+			});
+
+			ControlCamara.Command = new Command(() => {
+				Navigation.PushAsync(new CamaraPage());
 			});
 		}
 	}
