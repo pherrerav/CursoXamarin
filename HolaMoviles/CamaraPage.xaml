@@ -10,6 +10,7 @@
             <local:ControlContenido />
             
             <Image x:Name="Imagen" Source="camara.png" VerticalOptions="FillAndExpand" Aspect="AspectFit" />
+            <Button x:Name="BotonCamara" Text="Capturar" />
             <Label x:Name="Texto" />
         </StackLayout>
     </ContentPage.Content>
