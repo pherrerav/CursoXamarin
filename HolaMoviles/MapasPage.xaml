@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:mapas="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="HolaMoviles.MapasPage">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Label Text="Mapa - ubicacion" />
+
+            <mapas:Map x:Name="Mapa" MapType="Street" HasZoomEnabled="true" HasScrollEnabled="true"
+                       VerticalOptions="Fill" HorizontalOptions="Fill" HeightRequest="200" WidthRequest="200" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

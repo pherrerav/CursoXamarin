@@ -62,3 +62,12 @@ https://speakerdeck.com/stvansolano/taller-xamarin?slide=32 (Definicion de Proye
  https://iconos8.es/
 
  https://developer.android.com/guide/practices/screens_support?hl=es-419#range
+
+ ## Plugins y Xamarin.Essentials
+
+ https://docs.microsoft.com/en-us/xamarin/essentials/
+
+
+ ## Mapas
+
+ https://developers.google.com/maps/documentation/android-sdk/start

@@ -23,6 +23,11 @@ namespace HolaMoviles
 			ControlCamara.Command = new Command(() => {
 				Navigation.PushAsync(new CamaraPage());
 			});
+
+			ControlMapas.Command = new Command(() => {
+				Navigation.PushAsync(new MapasPage());
+			});
+
 		}
 	}
 }
